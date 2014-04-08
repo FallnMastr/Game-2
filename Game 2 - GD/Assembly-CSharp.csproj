@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{D33D0415-588D-92E0-E3FE-E40FE3BF69B3}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Objects (Prefabs)\enemy2_behavior.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Boss\boss_death.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Boss\boss_timer.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Boss\city_boss.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Boss\forest_boss.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Boss\generic_boss.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Boss\space_boss.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Boss\water_boss.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\City\city02_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\City\city_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\City\cityb02_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\City\cityb_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Forest\forest02_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Forest\forest_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Forest\forestb02_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Forest\forestb_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Paths\city02_path.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Paths\city_path.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Paths\cityb_path.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Paths\forest_path.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Paths\forestb_path.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Paths\test_path.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Paths\w4_path.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Paths\w5_path.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Paths\water_path.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Paths\waterb_path.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Water\water02_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Water\water_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Water\waterb02_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\Water\waterb_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\enemy_health_script.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\enemy_hit.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\enemy_pattern01.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\enemy_score_script.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\towards02_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\towards_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\vert02_enemy.cs" />
+     <Compile Include="Assets\Scripts\AI_Scripts\vert_enemy.cs" />
+     <Compile Include="Assets\Scripts\Bullet_Scripts\enemy_missile.cs" />
+     <Compile Include="Assets\Scripts\Bullet_Scripts\follow01.cs" />
+     <Compile Include="Assets\Scripts\Bullet_Scripts\follow02.cs" />
+     <Compile Include="Assets\Scripts\Bullet_Scripts\player_missile.cs" />
+     <Compile Include="Assets\Scripts\Bullet_Scripts\towards01.cs" />
+     <Compile Include="Assets\Scripts\Bullet_Scripts\towards02.cs" />
+     <Compile Include="Assets\Scripts\Bullet_Scripts\vert01.cs" />
+     <Compile Include="Assets\Scripts\Intro_Scripts\quad1_script.cs" />
+     <Compile Include="Assets\Scripts\Intro_Scripts\quad2_script.cs" />
+     <Compile Include="Assets\Scripts\Intro_Scripts\quad3_script.cs" />
+     <Compile Include="Assets\Scripts\Level_Scripts\city_level.cs" />
+     <Compile Include="Assets\Scripts\Level_Scripts\final_level.cs" />
+     <Compile Include="Assets\Scripts\Level_Scripts\forest_level.cs" />
+     <Compile Include="Assets\Scripts\Level_Scripts\space_level.cs" />
+     <Compile Include="Assets\Scripts\Level_Scripts\water_level.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\player2_behavior.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\player_behavior.cs" />
+     <Compile Include="Assets\Scripts\Player_Scripts\shield_script.cs" />
+     <Compile Include="Assets\Scripts\Relic_Scripts\relic_launch_script.cs" />
+     <Compile Include="Assets\Scripts\Relic_Scripts\relic_script.cs" />
+     <Compile Include="Assets\Scripts\Transition_Scripts\city_transition_script.cs" />
+     <Compile Include="Assets\Scripts\Transition_Scripts\coop_script.cs" />
+     <Compile Include="Assets\Scripts\Transition_Scripts\credits_script.cs" />
+     <Compile Include="Assets\Scripts\Transition_Scripts\death_script.cs" />
+     <Compile Include="Assets\Scripts\Transition_Scripts\forest_transition.cs" />
+     <Compile Include="Assets\Scripts\Transition_Scripts\game_end_script.cs" />
+     <Compile Include="Assets\Scripts\Transition_Scripts\skip_intro_script.cs" />
+     <Compile Include="Assets\Scripts\Transition_Scripts\water_trans_script.cs" />
+     <Compile Include="Assets\Scripts\background_Scripts\HUD_script.cs" />
+     <Compile Include="Assets\Scripts\background_Scripts\level_manager.cs" />
+     <Compile Include="Assets\Scripts\background_Scripts\level_timer.cs" />
+     <Compile Include="Assets\Scripts\background_Scripts\scroll_script.cs" />
+     <Compile Include="Assets\Scripts\enemyFireLauncher_script.cs" />
+     <Compile Include="Assets\Scripts\enemy_shot_behavior.cs" />
+     <Compile Include="Assets\Scripts\explode_big.cs" />
+     <Compile Include="Assets\Scripts\explode_script.cs" />
+     <Compile Include="Assets\Scripts\explosion_small.cs" />
+     <Compile Include="Assets\Scripts\fireBeam_script.cs" />
+     <Compile Include="Assets\Scripts\fireLauncher_script.cs" />
+     <Compile Include="Assets\Scripts\player_shot_behavior.cs" />
+     <Compile Include="Assets\Scripts\start_script.cs" />
+     <Compile Include="Assets\Scripts\upgradeLORD.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
